@@ -11,6 +11,7 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    padding-left: 10px;
 }
 header img{
     height: 40px;
@@ -18,18 +19,11 @@ header img{
 }
 .conteiner{
     width: 100%;
-    /* align-items: center; */
     max-width: 960px;
     margin: 0 auto;
     border: solid; 
     background-color: #E7E7E7;
-    /* justify-conten: space-between; *
-    /* display: flex; */
-    /* max-width: 50%; */
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
+    justify-content: space-between;
 }
 h1{
     font-size: 40px;
@@ -49,7 +43,8 @@ table th{
 table td {
     text-align: center;
     font-size: 18px;
-    padding: 18px 0;
+    padding: 16px 0;
+    border-top: none;
 }
 table td img{
     height: 34px;
@@ -74,20 +69,24 @@ form button{
 }
 form {
     width: 100%;
-    display: flex;
+    display: block;
     /* max-width: 640px; */
     justify-content: space-between;
     margin-bottom: 56px;
 }
 input, button{
-    font-size: 24px;
+    font-size: 20px;
     margin: 4px;
     padding: 8px;
-    cursor: pointer;;
+    cursor: pointer;
+    border-radius: 4px;
 } 
 input{
     border: none;
     border-bottom: 2px solid #000;
+}
+#nota-atividade{
+    width: 80px;
 }
 .resultado{
     padding: 8px;

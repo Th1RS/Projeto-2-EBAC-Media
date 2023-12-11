@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nota do aluno</title>
+    <link rel="shortcut icon" type="imagex/png" href="./images/logo.png">
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +16,12 @@
 <body>
     <div class="conteiner">
         <header>
-            <img src="./images/logo.png" alt="Logo"/><!-- Aqui via alguma img <imag> -->
-            <h1>Calculando a media</h1>
+            <img src="./images/logo.png" alt="Logo"/><!-- Aqui vai alguma img <imag> -->
+            <h1>Calculando a média</h1>
         </header>
-        <form>
-            <input type="text" required placeholder="Nome da ativadade"/>
-            <input typer="number" required placeholder="Nota da atividade" min="0" max="10"/>
+        <form id="form-atividade">
+            <input id="nome-atividade" type="text" required placeholder="Nome da atividade"/>
+            <input id="nota-atividade" type="number" required placeholder="Nota" min="0" max="10"/>
             <button type="submit">Adicionar +</button>
         </form>
         <table cellspacing="0">
@@ -28,31 +29,31 @@
                 <tr>
                     <th>Nome da atividade</th>
                     <th>Nota</th>
-                    <th>Aprovado</th>
+                    <th>Aprovado?</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <!-- <tr>
                     <td>Atividade 1</td>
                     <td>100</td>
-                    <td><img src="./images/aprovado.png"/></td> <!--Aqui via outra imagem -->
+                    <td><img src="./images/aprovado.png"/></td>
                 </tr>
                 <tr>
                     <td>Atividade 2</td>
                     <td>50</td>
                     <td><img src="./images/reprovado.png"/></td>
-                </tr>
+                </tr> -->
             </tbody>
             <tfoot>
                 <tr>
-                    <td>Media</td>
-                    <td>75</td>
-                    <td><span class="resultado aprovado">Aprovado</span></td>
+                    <td>Média</td>
+                    <td id="media-final">---</td>
+                    <td id="media-final-resultado">---</td>
                 </tr>
             </tfoot>
         </table>
        </div>
-        <link rel="scrip" href="./main.js">
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
