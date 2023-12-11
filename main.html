@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota do aluno</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+            <img src="./images/logo.png" alt="Logo"/><!-- Aqui via alguma img <imag> -->
+            <h1>Calculando a media</h1>
+        </header>
+        <form>
+            <input type="text" required placeholder="Nome da ativadade"/>
+            <input typer="number" required placeholder="Nota da atividade" min="0" max="10"/>
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome da atividade</th>
+                    <th>Nota</th>
+                    <th>Aprovado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Atividade 1</td>
+                    <td>100</td>
+                    <td><img src="./images/aprovado.png"/></td> <!--Aqui via outra imagem -->
+                </tr>
+                <tr>
+                    <td>Atividade 2</td>
+                    <td>50</td>
+                    <td><img src="./images/reprovado.png"/></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Media</td>
+                    <td>75</td>
+                    <td><span class="resultado aprovado">Aprovado</span></td>
+                </tr>
+            </tfoot>
+        </table>
+       </div>
+        <link rel="scrip" href="./main.js">
+    </div>
+</body>
+</html>
